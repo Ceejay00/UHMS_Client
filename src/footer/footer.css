@@ -1,0 +1,28 @@
+.foot{
+    background-color: #151523;
+    font-family: Montserrat;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* margin-top: 80px; */
+}
+
+.foot-nav ul {
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    width: 400px;
+  
+}
+.foot-nav ul li{
+    list-style: none;
+}
+.reserved{
+    color:white;
+   display:flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Agriculture",
+    "departments": [
+      "Agricultural Economics and Farm Management",
+      "lorem ipsum 20"
+    ]
+  },
+  {
+    "name": "CIS",
+    "departments": [
+      "Computer Science",
+      "Telecommunication and information science"
+    ]
+  }
+]

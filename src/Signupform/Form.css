@@ -1,0 +1,142 @@
+.form-inputs p {
+  color: red;
+  display: flex;
+  box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.logo-name {
+  display: flex;
+}
+.logo-name .name {
+  color: #a8b7ed;
+}
+.logo-name .hostels {
+  color: white;
+}
+.Already {
+  display: flex;
+  width: 280px;
+  height: 42px;
+  justify-content: space-between;
+}
+.Already p {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+.background {
+  background-color: #1f1f2d;
+  height: 200vh;
+}
+.Already button {
+  width: 126px;
+  height: 42px;
+  border: none;
+  border-radius: 28px;
+  background-color: #335ffe;
+  color: white;
+  cursor: pointer;
+}
+.accomodation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  color: white;
+}
+.row-one {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row-one label {
+  color: white;
+  flex-wrap: wrap;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+.form-input {
+  width: 376.92px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+.form-inputs {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.row-two {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row-two label {
+  color: white;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+.row-three {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row-three label {
+  color: white;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+.row-four {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.row-four label {
+  color: white;
+  margin-left: 20px;
+  font-size: 13px;
+  font-family: Montserrat;
+}
+.border {
+  border: 1px solid gray;
+  width: 1155px;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  margin: 0px 170px;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.form-btn {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-btn button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 15px;
+  background-color: #335ffe;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: Montserrat;
+  cursor: pointer;
+}
