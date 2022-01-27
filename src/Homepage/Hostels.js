@@ -70,8 +70,8 @@ const Hostels = () => {
       .get("http://localhost:8000/getHostel")
       .then((response) => {
         console.log(response);
-        // setCardInfo(response.data);
-        // setHostel(cardInfo.slice(0, 8));
+        setCardInfo(response.data);
+        setHostel(cardInfo.slice(0, 8));
       })
       .catch((err) => {
         console.log(err);
@@ -93,9 +93,8 @@ const Hostels = () => {
           >
             <div className="imagecont">
               <img
-                src={`./images/${card.imagesUrl}`}
+                src={`./images/${card.imagesUrl[1]}`}
                 alt=""
-                // src={card.image}
                 style={{ height: "250px", width: "320px" }}
               />
             </div>

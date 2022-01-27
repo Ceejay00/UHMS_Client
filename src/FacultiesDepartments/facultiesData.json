@@ -3,14 +3,146 @@
     "name": "Agriculture",
     "departments": [
       "Agricultural Economics and Farm Management",
-      "lorem ipsum 20"
+      "Agricultural Extension and Rural Development",
+      "Agronomy",
+      "Animal Production",
+      "Aquaculture and Fisheries",
+      "Crop Protection",
+      "Home Economics and Food Science",
+      "Forest Resources Management"
     ]
   },
   {
-    "name": "CIS",
+    "name": "Arts",
+    "departments": [
+      "Arabic",
+      "Christian Studies",
+      "Comparative Religious Studies",
+      "English Language",
+      "French",
+      "History and International Studies",
+      "Islamic Studies",
+      "Linguistics",
+      "The Performing Arts",
+      "Yoruba"
+    ]
+  },
+  {
+    "name": "Faculty of Communications and Information Sciences",
     "departments": [
       "Computer Science",
-      "Telecommunication and information science"
+      "Information and Communication Science",
+      "Library and Information Science",
+      "Mass Communication",
+      "Telecommunication Science"
+    ]
+  },
+
+  {
+    "name": "Faculty of Education",
+    "departments": [
+      "Adult and Primary Education Studies",
+      "Arts Education",
+      "Counsellor Education",
+      "Educational Management",
+      "Educational Technology",
+      "Health Promotion and Environmental Health Education",
+      "Human Kinetics Education",
+      "Science Education",
+      "Social Sciences Education"
+    ]
+  },
+  {
+    "name": "Faculty of Engineering and Technology",
+    "departments": [
+      "Agric. And Biosystems Engineering",
+      "Biomedical Engineering",
+      "Chemical Engineering",
+      "Civil Engineering",
+      "Computer Engineering",
+      "Electrical and Electronics Engineering",
+      "Food and Bioprocess Engineering",
+      "Materials and Metallurgical Engineering",
+      "Mechanical Engineering",
+      "Water Resources and Environmental Engineering"
+    ]
+  },
+  {
+    "name": "Faculty of Environmental Sciences",
+    "departments": [
+      "Architecture",
+      "Estate Management",
+      "Quantity Surveying",
+      "Surveying and Geo-informatics",
+      "Urban and Regional Planning"
+    ]
+  },
+  {
+    "name": "Faculty of Law",
+    "departments": ["LL.B(Hons) Common Law", "LL.B (Hons) Common & Islamic Law"]
+  },
+  {
+    "name": "Faculty of Life Sciences",
+    "departments": [
+      "Biochemistry",
+      "Microbiology",
+      "Optometry & Vision Science",
+      "Plant Biology",
+      "Zoology"
+    ]
+  },
+  {
+    "name": "Faculty of Management Sciences",
+    "departments": [
+      "Accounting",
+      "Business Administration",
+      "Finance",
+      "Marketing",
+      "Industrial Relations and Personnel Management",
+      "Public Administration"
+    ]
+  },
+  {
+    "name": "Faculty of Pharmaceutical Sciences",
+    "departments": ["Pharmacy"]
+  },
+  {
+    "name": "Faculty of Physical Sciences",
+    "departments": [
+      "Chemistry",
+      "Geology",
+      "Geophysics",
+      "Industrial Chemistry",
+      "Mathematics",
+      "Physics",
+      "Statistics"
+    ]
+  },
+  {
+    "name": "Faculty of Social Sciences",
+    "departments": [
+      "Criminology and Security Studies",
+      "Economics",
+      "Geography and Environmental Management",
+      "Political Science",
+      "Psychology",
+      "Social Work",
+      "Sociology"
+    ]
+  },
+  {
+    "name": "Faculty of Veterinary Medicine",
+    "departments": [
+      "Veterinary Anatomy",
+      "Veterinary Medicine",
+      "Veterinary Microbiology",
+      "Veterinary Parasitology and Entomology",
+      "Veterinary Pathology",
+      "Veterinary Physiology and Biochemistry",
+      "Pharmacology and Toxicology",
+      "Veterinary Public Health and Preventive Medicine",
+      "Theriogenology and Production",
+      "Veterinary Surgery and Radiology"
     ]
   }
 ]

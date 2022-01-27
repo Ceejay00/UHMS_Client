@@ -9,7 +9,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-const UserProfile = () => {
+const UserProfileHome = () => {
   const [user, setUser] = useState([]);
   const [paystackUrl, setPaystackUrl] = useState("");
   // var matric = Cookies.get('token')
@@ -51,10 +51,9 @@ const UserProfile = () => {
                   alt="unilorin"
                   height="60"
                 />
-
-                <h4 className="name">Unilorin</h4>
-                <h4 className="hostels">Hostels</h4>
               </Link>
+              <h4 className="name">Unilorin</h4>
+              <h4 className="hostels">Hostels</h4>
             </div>
             <div className="sidecont">
               <div className="sidenav">
@@ -83,7 +82,14 @@ const UserProfile = () => {
               <ul>
                 <li className="dsh">Dashboard/Overview</li>
                 <li className="spec">
-                  <img src={elipse} alt="profile" height="40" />
+                  <Link to="/update">
+                    <img
+                      src={users.profile}
+                      className="reds"
+                      alt="profile"
+                      height="40"
+                    />
+                  </Link>
                   <h4>{users.matricNumber}</h4>
                 </li>
               </ul>
@@ -127,4 +133,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default UserProfileHome;

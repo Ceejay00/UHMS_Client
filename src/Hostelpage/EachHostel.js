@@ -29,6 +29,7 @@ const EachHostel = () => {
       .then((response) => {
         console.log(response.data);
         setCardInfo(response.data);
+        console.log("cardInfo-----", response.data);
         // window.location = "/formal";
       })
       .catch((err) => {
@@ -41,7 +42,13 @@ const EachHostel = () => {
       <NavbarTwo />
       <Carousel
         slides={CarouselData}
-        CarouselData={[{ image: cardInfo[0]?.imagesUrl }]}
+        CarouselData={
+          cardInfo && cardInfo.length > 0
+            ? cardInfo[0]?.imagesUrl.map((image) => {
+                return { image: image };
+              })
+            : [{ image: "" }]
+        }
       />
 
       <div className="weird">

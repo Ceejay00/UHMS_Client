@@ -21,9 +21,14 @@ import MainHostelPage from "./Hostelpage/MainHostelPage";
 import Faqs from "./FAQs/Faqs";
 import UserProfile from "./Userprofile/UserProfile";
 import EachHostel from "./Hostelpage/EachHostel";
+
 import Carousel from "./carousel/Carousel";
 import { CarouselData } from "./carousel/CarouselData";
 import Footer from "./footer/Footer";
+import UserProfileHome from "./Userprofile/UserProfileHome";
+import ManageBed from "./Userprofile/ManageBed";
+import EditProfile from "./Userprofile/EditProfile";
+import BookingForm from "./Userprofile/BookingForm";
 
 function App() {
   return (
@@ -43,6 +48,10 @@ function App() {
         <Route path="faqs" element={<Faqs />} />
         <Route path="user" element={<UserProfile />} />
         <Route path="each" element={<EachHostel />} />
+        <Route path="userhome" element={<UserProfileHome />} />
+        <Route path="manage" element={<ManageBed />} />
+        <Route path="update" element={<EditProfile />} />
+        <Route path="book" element={<BookingForm />} />
       </Routes>
     </Router>
   );

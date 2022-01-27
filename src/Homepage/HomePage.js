@@ -18,12 +18,12 @@ const HomePage = () => {
     height: "400px",
     backgroundColor: "red",
   };
-  const submit = () =>{
+  const submit = () => {
     // console.log(id)
     // const {id} = useparams()
     // window.location=`/each?id=${id}`
-    window.location =  'each'
-}
+    window.location = "each";
+  };
   return (
     <div className="background8">
       <NavbarTwo />
@@ -45,7 +45,13 @@ const HomePage = () => {
           </div>
         </section>
         <section className="finegirl">
-          <img className="image" src={finegirl} alt="unilorin" height="494" width="475" />
+          <img
+            className="image"
+            src={finegirl}
+            alt="unilorin"
+            height="494"
+            width="475"
+          />
         </section>
       </div>
 
@@ -55,41 +61,41 @@ const HomePage = () => {
           <h4>Book a private school hostel today!</h4>
         </div>
         <div className="main-cnts">
-          <section className="img">
+          <section className="imgn">
             <img className="image" src={bent} alt="unilorin" height="440px" />
           </section>
           <section className="lists">
             <h2>Why book a private hostel?</h2>
             <ul>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
               <li>
-                <img className="image" src={icon} alt="unilorin" height="" />{" "}
+                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
                 Book a hostel today!
               </li>
             </ul>
           </section>
         </div>
       </div>
-      <div className="thirdcontainer">
+      {/* <div className="thirdcontainer">
         <div className="heading">
           <h1>Our Hostels</h1>
         </div>
@@ -101,20 +107,20 @@ const HomePage = () => {
             <button>View more</button>
           </div>
         </Link>
-      </div>
+      </div> */}
       <div className="lastpart">
         <div className="lastpartheader">
           <h2>View Hostels Images</h2>
           <h4>Our various Hostel Facilities</h4>
         </div>
         <div className="lastpartimages">
-        <img className="image" src={gym} alt="unilorin" height="340px" />
-        <img className="image" src={gen} alt="unilorin" height="340px" />
-        <img className="image" src={bed} alt="unilorin" height="340px" />
-        <img className="image" src={library} alt="unilorin" height="340px" />
+          <img className="image" src={gym} alt="unilorin" />
+          <img className="image" src={gen} alt="unilorin" />
+          <img className="image" src={bed} alt="unilorin" />
+          <img className="image" src={library} alt="unilorin" />
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

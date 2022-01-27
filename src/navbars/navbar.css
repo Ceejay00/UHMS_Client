@@ -37,3 +37,82 @@
 .navlinks ul li a {
   text-decoration: none;
 }
+.Acom button {
+  width: 126px;
+  height: 42px;
+  border: none;
+  border-radius: 28px;
+  background-color: #335ffe;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Montserrat;
+    align-items: center;
+
+    width: 800px;
+  }
+  .navbartwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Montserrat;
+    align-items: center;
+
+    width: 1000px;
+  }
+  .logo-name {
+    display: flex;
+    font-size: 9px;
+  }
+  .logo-name img {
+    height: 30px;
+    width: 50px;
+  }
+  .logo-name .name {
+    color: #a8b7ed;
+  }
+  .logo-name .hostels {
+    color: white;
+  }
+  .Already {
+    display: flex;
+    width: 280px;
+    height: 42px;
+    justify-content: space-between;
+  }
+  .Already p {
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+  }
+  .navlinks ul {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+  }
+  .navlinks ul li {
+    list-style: none;
+  }
+  .navlinks ul li a {
+    text-decoration: none;
+  }
+  .Acom button {
+    width: 60px;
+    height: 22px;
+    border: none;
+    border-radius: 28px;
+    background-color: #335ffe;
+    color: white;
+    cursor: pointer;
+    font-size: 7px;
+  }
+}
+.navbar {
+  background-color: #25253e;
+}

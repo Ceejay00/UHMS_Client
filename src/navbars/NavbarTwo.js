@@ -24,19 +24,14 @@ const NavbarTwo = () => {
               </Link>
             </li>
             <li>
-              <Link style={navStyle} to="form">
-                <p>Accomodation</p>
-              </Link>
-            </li>
-            <li>
-              <Link style={navStyle} to="faqs">
-                <p>FAQs</p>
+              <Link style={navStyle} to="/hostels">
+                <p> About Hostels</p>
               </Link>
             </li>
           </ul>
         </div>
         <div className="Acom">
-          <Link to="form">
+          <Link to="/form">
             <button>Get Accomodation</button>
           </Link>
         </div>

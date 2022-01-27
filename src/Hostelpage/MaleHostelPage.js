@@ -5,12 +5,12 @@ import { Button } from "react-bootstrap";
 import "../Homepage/homepage.css";
 const MaleHostelPage = () => {
   const [cardInfo, setCardInfo] = useState([]);
-  const submit = (id) =>{
+  const submit = (id) => {
     // console.log(id)
     // const {id} = useparams()
-    window.location=`/each?id=${id}`
+    window.location = `/each?id=${id}`;
     // window.location =  '/each'
-}
+  };
   useEffect(() => {
     axios
       .get("http://localhost:8000/getMale")
@@ -28,10 +28,14 @@ const MaleHostelPage = () => {
       <div>
         <div className="cards">
           {cardInfo.map((card) => (
-            <div className="card-container" onClick={() => submit(card._id)} key={card._id}>
+            <div
+              className="card-container"
+              onClick={() => submit(card._id)}
+              key={card._id}
+            >
               <div className="imagecont">
                 <img
-                  src={`./images/${card.imagesUrl}`}
+                  src={`./images/${card.imagesUrl[0]}`}
                   alt=""
                   // src={card.image}
                   style={{ height: "250px", width: "320px" }}
