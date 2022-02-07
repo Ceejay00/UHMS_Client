@@ -238,162 +238,183 @@ const BookingForm = () => {
   // }, []);
   return (
     <div>
-      <div className="conlarge">
-        <div className="sidebar">
-          <div className="logo-name">
-            <Link to="/">
-              <img
-                className="image"
-                src={unilorin}
-                alt="unilorin"
-                height="60"
-              />
-            </Link>
-            <h4 className="name">Unilorin</h4>
-            <h4 className="hostels">Hostels</h4>
-          </div>
-          <div className="sidecont">
-            <div className="sidenav">
-              <ul>
-                <Link to="/userhome">
-                  <li>Home</li>
-                </Link>
-                <Link to="/manage">
-                  <li>Manage Bedspace</li>
-                </Link>
-                <Link to="/update">
-                  <li>Update Profile</li>
-                </Link>
-                <li>FAQs</li>
-              </ul>
-            </div>
-            <div className="red">
+      {user.map((users, index) => (
+        <div className="conlarge" key={index}>
+          <div className="sidebar">
+            <div className="logo-name">
               <Link to="/">
-                <button>Log out</button>
+                <img
+                  className="image"
+                  src={unilorin}
+                  alt="unilorin"
+                  height="60"
+                />
               </Link>
+              <h4 className="name">Unilorin</h4>
+              <h4 className="hostels">Hostels</h4>
+            </div>
+            <div className="sidecont">
+              <div className="sidenav">
+                <ul>
+                  <Link to="/userhome">
+                    <li>Home</li>
+                  </Link>
+                  <Link to="/manage">
+                    <li>Manage Bedspace</li>
+                  </Link>
+                  <Link to="/update">
+                    <li>Update Profile</li>
+                  </Link>
+                  <li>FAQs</li>
+                </ul>
+              </div>
+              <div className="red">
+                <Link to="/">
+                  <button>Log out</button>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="bordevvd">
-          <div className="e">
-            <h1>Book Hostel</h1>
-            <h3>Fill in the following details</h3>
-          </div>
-          <form onSubmit={handleSubmit}>
-            <div className="plm">
-              <div className="column3">
-                <label htmlFor="firstName" className="lb3">
-                  First name
-                </label>
-                <br></br>
-                <input
-                  id="firstName"
-                  type="text"
-                  className="cl3
+          <div className="bordevvd">
+            <div className="e">
+              <h1>Book Hostel</h1>
+              <h3>Fill in the following details</h3>
+            </div>
+            <form onSubmit={handleSubmit}>
+              <div className="plm">
+                <div className="column3">
+                  <label htmlFor="firstName" className="lb3">
+                    First name
+                  </label>
+                  <br></br>
+                  <input
+                    id="firstName"
+                    type="text"
+                    className="cl3
                   "
-                  name="firstName"
-                  placeholder="Enter your First name"
-                  value={bookval.firstName}
-                  onChange={handleChange}
-                ></input>
-                <br></br>
-                <label htmlFor="matricNumber" className="lb3">
-                  Matric Number
-                </label>
-                <br></br>
-                <input
-                  id="matricNumber"
-                  type="text"
-                  className="cl3"
-                  name="matricNumber"
-                  placeholder="Enter your First name"
-                  value={bookval.matricNumber}
-                  onChange={handleChange}
-                ></input>
-                <br></br>
-                <label htmlFor="gender">Gender</label> <br />
-                <select
-                  name="gender"
-                  id="gender"
-                  className="cm3
+                    name="firstName"
+                    placeholder="Enter your First name"
+                    disabled={true}
+                    value={users.firstName}
+                    onChange={handleChange}
+                  ></input>
+                  <br></br>
+                  <label htmlFor="matricNumber" className="lb3">
+                    Matric Number
+                  </label>
+                  <br></br>
+                  <input
+                    id="matricNumber"
+                    type="text"
+                    disabled={true}
+                    className="cl3"
+                    name="matricNumber"
+                    placeholder="Enter your Matric No"
+                    value={users.matricNumber}
+                    onChange={handleChange}
+                  ></input>
+                  <br></br>
+                  <label htmlFor="gender">Gender</label> <br />
+                  <select
+                    name="gender"
+                    id="gender"
+                    className="cm3
                   "
-                  onChange={onGenderChanged}
-                  styles={{ border: "1px solid black" }}
-                >
-                  <option value={undefined}></option>
-                  <option value="Male">Male</option>
-                  <option value="Female">Female</option>
-                </select>
-                <br></br>
-                <label>Room Type</label>
-                <select
-                  name="prices"
-                  id="prices"
-                  className="cm3
+                    onChange={onGenderChanged}
+                    styles={{ border: "1px solid black" }}
+                  >
+                    <option value={undefined}></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>
+                  <br></br>
+                  <label>Room Type</label>
+                  <select
+                    name="prices"
+                    id="prices"
+                    className="cm3
                   "
-                  onChange={onRoomTypeChange}
-                  styles={{ border: "1px solid black" }}
-                >
-                  <option value={undefined}></option>
+                    onChange={onRoomTypeChange}
+                    styles={{ border: "1px solid black" }}
+                  >
+                    <option value={undefined}></option>
 
-                  <option value="twoRoom">Room of two</option>
-                  <option value="fourRoom">Room of four</option>
-                </select>
-              </div>
-              <div className="column4">
-                <label htmlFor="lastName">Last name</label>
-                <br></br>
-                <input
-                  id="lastName"
-                  type="text"
-                  className="cl3
+                    <option value="twoRoom">Room of two</option>
+                    <option value="fourRoom">Room of four</option>
+                  </select>
+                </div>
+                <div className="column4">
+                  <label htmlFor="lastName">Last name</label>
+                  <br></br>
+                  <input
+                    id="lastName"
+                    type="text"
+                    className="cl3
                   "
-                  name="lastName"
-                  placeholder="Enter your last name"
-                  value={bookval.lastName}
-                  onChange={handleChange}
-                ></input>
-                <br></br>
-                <label htmlFor="state">State of Origin</label>
-                <br></br>
-                <input
-                  id="state"
-                  type="text"
-                  className="cl3
-                  "
-                  name="state"
-                  placeholder="Enter your State"
-                  value={bookval.lastName}
-                  onChange={handleChange}
-                ></input>
-                <br></br>
-                <label>Hostels</label>
-                <br></br>
-                <select
-                  name="hostel"
-                  id="hostel"
-                  className="cm3
-                  "
-                  onChange={onHostelSelected}
-                  styles={{ border: "1px solid black" }}
-                >
-                  <option value={undefined}></option>
+                    disabled={true}
+                    name="lastName"
+                    placeholder="Enter your last name"
+                    value={users.lastName}
+                    onChange={handleChange}
+                  ></input>
+                  <br></br>
 
-                  {selectedHostels.map((hostel, index) => (
-                    <option key={hostel.name + "-" + index} value={index}>
-                      {hostel.name}
-                    </option>
-                  ))}
-                </select>
+                  <label htmlFor="state">State of Origin</label>
+                  <br></br>
+                  <input
+                    id="state"
+                    type="text"
+                    className="cl3
+                  "
+                    name="state"
+                    placeholder="Enter your State"
+                    onChange={handleChange}
+                  ></input>
+                  <br></br>
+                  <label>Hostels</label>
+                  <br></br>
+                  <select
+                    name="hostel"
+                    id="hostel"
+                    className="cm3
+                  "
+                    onChange={onHostelSelected}
+                    styles={{ border: "1px solid black" }}
+                  >
+                    <option value={undefined}></option>
 
-                <div>
-                  <h3 style={{ color: "red" }}>Price:{priceSelector} </h3>
+                    {selectedHostels.map((hostel, index) => (
+                      <option key={hostel.name + "-" + index} value={index}>
+                        {hostel.name}
+                      </option>
+                    ))}
+                  </select>
+                  <label htmlFor="lastName"></label>
+                  <br></br>
+                  <input
+                    id="lastName"
+                    type="text"
+                    className="cl3
+                  "
+                    name="lastName"
+                    onChange={handleChange}
+                    style={{ border: "none" }}
+                  ></input>
+                  <br></br>
                 </div>
               </div>
-            </div>
-          </form>
-        </div>
-        {/* <form onSubmit={handleSubmit}>
+              <div className="x">
+                <h2 style={{ color: "black" }}>
+                  Hostel Fees:NGN {priceSelector}{" "}
+                </h2>
+              </div>
+              <div className="fev"></div>
+              <div className="jk">
+                <button type="submit">Proceed to Payment</button>
+              </div>
+            </form>
+          </div>
+          {/* <form onSubmit={handleSubmit}>
           <label htmlFor="firstName">First name</label>
           <input
             id="firstName"
@@ -466,7 +487,8 @@ const BookingForm = () => {
           ></input>
         </form>
         <PaystackButton {...paystackButtonProps} /> */}
-      </div>
+        </div>
+      ))}
     </div>
   );
 };

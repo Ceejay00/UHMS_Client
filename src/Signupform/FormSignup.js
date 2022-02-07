@@ -369,6 +369,7 @@ const FormSignup = () => {
                 <input
                   id="phoneNo"
                   type="text"
+                  maxLength="11"
                   className="fm"
                   name="phoneNo"
                   placeholder="Enter your Phone no"

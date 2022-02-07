@@ -20,10 +20,17 @@ const FormSignIn = () => {
         </div>
         <div className="signin">
           <div className="spn">
-            <p>Not yet a member?</p>
-            <Link to="/form">
-              <button>Sign up</button>
-            </Link>
+            <div>
+              <Link to="/admin">
+                <button>Admin</button>
+              </Link>
+            </div>
+            <div className="bas">
+              <p>Not yet a member?</p>
+              <Link to="/form">
+                <button>Sign up</button>
+              </Link>
+            </div>
           </div>
           <form className="the" onSubmit={handleSubmit}>
             <section className="acc">

@@ -29,6 +29,7 @@ import UserProfileHome from "./Userprofile/UserProfileHome";
 import ManageBed from "./Userprofile/ManageBed";
 import EditProfile from "./Userprofile/EditProfile";
 import BookingForm from "./Userprofile/BookingForm";
+import AdminSignIn from "./sign/AdminSignIn";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
         <Route path="manage" element={<ManageBed />} />
         <Route path="update" element={<EditProfile />} />
         <Route path="book" element={<BookingForm />} />
+        <Route path="admin" element={<AdminSignIn />} />
       </Routes>
     </Router>
   );

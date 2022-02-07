@@ -17,6 +17,11 @@
   margin: 40px;
   border-radius: 10px;
 }
+.fs {
+  width: 380px;
+  height: 60px;
+  border-radius: 5px;
+}
 .e {
   width: 100%;
   display: flex;

@@ -13,9 +13,8 @@
   padding-top: 40px;
 }
 .profile {
-  width: 1105px;
-  height: 100vh;
-  background-color: white;
+  width: 1600px;
+  height: 150vh;
 }
 .sidecont {
   display: flex;

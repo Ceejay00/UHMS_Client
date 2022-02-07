@@ -145,6 +145,18 @@
   text-decoration: none;
 }
 
+.lists ul li {
+  display: flex;
+}
+.lists ul li img {
+}
+.hg {
+  width: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 1024px) {
   .afternav {
     display: flex;
@@ -327,7 +339,6 @@
   .lastpartimages img {
     width: 250px;
     height: 250px;
-    border: 1px solid black;
   }
   .finegirl img {
     width: 250px;
@@ -354,7 +365,6 @@
 .lastpartimages img {
   width: 250px;
   height: 250px;
-  border: 1px solid black;
 }
 
 @media screen and (max-width: 900px) {
@@ -444,6 +454,7 @@
     width: 19px;
     height: 19px;
   }
+
   .thirdcontainer {
     font-family: Montserrat;
     background-color: yellow;

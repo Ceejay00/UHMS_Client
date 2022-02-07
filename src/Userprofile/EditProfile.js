@@ -179,7 +179,7 @@ const EditProfile = () => {
                     <select
                       name="faculty"
                       id="faculty"
-                      className="fm"
+                      className="fs"
                       onChange={onFacultyChange}
                     >
                       <option value={undefined}></option>
@@ -194,7 +194,7 @@ const EditProfile = () => {
                     <select
                       name="level"
                       id="level"
-                      className="fm"
+                      className="fs"
                       value={postData.level}
                       onChange={handleChange}
                       styles={{ border: "1px solid black" }}
@@ -229,7 +229,7 @@ const EditProfile = () => {
                     <select
                       name="department"
                       id="department"
-                      className="fm"
+                      className="fs"
                       value={postData.departments}
                       onChange={handleChange}
                     >

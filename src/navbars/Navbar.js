@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="Already">
           <p>Already a member?</p>
           <Link to="/formal">
-            <button>Signin</button>
+            <button className="iy">Sign in</button>
           </Link>
         </div>
       </div>

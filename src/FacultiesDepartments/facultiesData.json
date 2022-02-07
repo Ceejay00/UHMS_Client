@@ -132,17 +132,6 @@
   },
   {
     "name": "Faculty of Veterinary Medicine",
-    "departments": [
-      "Veterinary Anatomy",
-      "Veterinary Medicine",
-      "Veterinary Microbiology",
-      "Veterinary Parasitology and Entomology",
-      "Veterinary Pathology",
-      "Veterinary Physiology and Biochemistry",
-      "Pharmacology and Toxicology",
-      "Veterinary Public Health and Preventive Medicine",
-      "Theriogenology and Production",
-      "Veterinary Surgery and Radiology"
-    ]
+    "departments": ["Veterinary Medicine"]
   }
 ]

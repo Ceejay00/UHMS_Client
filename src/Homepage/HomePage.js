@@ -55,7 +55,12 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className="secondcontainer">
+      <div
+        className="secondcontainer"
+        style={{
+          backgroundImage: "url(https://i.ibb.co/ck7nvs2/Group-354.png)",
+        }}
+      >
         <div className="heading">
           <h1>Book a hostel today!</h1>
           <h4>Book a private school hostel today!</h4>
@@ -65,31 +70,43 @@ const HomePage = () => {
             <img className="image" src={bent} alt="unilorin" height="440px" />
           </section>
           <section className="lists">
-            <h2>Why book a private hostel?</h2>
+            <h2>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Why book a private hostel?
+            </h2>
             <ul>
               <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
+                <div className="hg">
+                  <img className="imag" src={icon} alt="unilorin" height="" />{" "}
+                </div>
+                Spacious rooms and comfy beds
               </li>
               <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
+                <div className="hg">
+                  <img className="imag" src={icon} alt="unilorin" height="" />{" "}
+                </div>
+                Stable power and water supply
               </li>
               <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
+                <div className="hg">
+                  <img className="imag" src={icon} alt="unilorin" height="" />{" "}
+                </div>
+                Neat and serene environment
               </li>
               <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
+                <div className="hg">
+                  <img className="imag" src={icon} alt="unilorin" height="" />{" "}
+                </div>
+                Backup
+                generator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </li>
               <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
-              </li>
-              <li>
-                <img className="imag" src={icon} alt="unilorin" height="" />{" "}
-                Book a hostel today!
+                <div className="hg">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <img className="imag" src={icon} alt="unilorin" height="" />{" "}
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Access to library, laundry room, etc.
               </li>
             </ul>
           </section>
