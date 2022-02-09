@@ -54,7 +54,7 @@
   font-family: Montserrat;
   color: white;
 
-  height: 80vh;
+  height: 100vh;
 }
 .heading {
   text-align: center;
@@ -74,11 +74,7 @@
   justify-content: space-evenly;
   align-items: center;
 }
-.thirdcontainer {
-  font-family: Montserrat;
-  background-color: white;
-  height: 190vh;
-}
+
 .heading h1 {
   padding-top: 150px;
 }
@@ -246,11 +242,7 @@
     width: 19px;
     height: 19px;
   }
-  .thirdcontainer {
-    font-family: Montserrat;
-    background-color: yellow;
-    height: 620vh;
-  }
+
   .heading h1 {
     padding-top: 150px;
   }
@@ -382,16 +374,19 @@
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
-
+    width: 100%;
+    justify-content: center;
     color: white;
     font-family: Montserrat;
+
+    align-items: center;
   }
   .text {
     padding-top: 20px;
-    width: 400px;
+    width: 500px;
   }
   .text h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
   .text .one {
     font-weight: 500;
@@ -403,7 +398,8 @@
     width: 60%;
   }
   .smll h5 {
-    font-weight: 200;
+    font-weight: 100;
+    font-size: 20px;
   }
   .btn {
     margin-top: 40px;
@@ -415,7 +411,7 @@
     height: 42px;
     border-radius: 40px;
     color: white;
-    font-size: 7px;
+    font-size: 10px;
     font-weight: bold;
   }
   .secondcontainer {
@@ -435,8 +431,8 @@
     margin-top: 40px;
   }
   .imgn img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
   }
   .lists ul li {
     margin: 10px;
@@ -455,11 +451,6 @@
     height: 19px;
   }
 
-  .thirdcontainer {
-    font-family: Montserrat;
-    background-color: yellow;
-    height: 620vh;
-  }
   .heading h1 {
     padding-top: 150px;
   }
@@ -550,7 +541,8 @@
     height: 200px;
   }
   .finegirl img {
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
   }
 }

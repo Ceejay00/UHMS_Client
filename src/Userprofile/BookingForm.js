@@ -117,7 +117,7 @@ import { Link } from "react-router-dom";
 import unilorin from "../images/unilorin.png";
 
 const BookingForm = () => {
-  const { handleChange, bookval, handleSubmit } = UseBook();
+  const { handleChange, bookval } = UseBook();
   const [user, setUser] = useState([]);
   const publicKey = payStackPublicKey;
   const amount = 1000000; // Remember, set in kobo!
@@ -125,24 +125,25 @@ const BookingForm = () => {
   const [name, setName] = useState("olawale");
   const [phone, setPhone] = useState("082929282828");
   const [paystackUrl, setPaystackUrl] = useState("");
-  // var matric = Cookies.get('token')
-
-  // const bookReservation = async () => {
-  //   await axios
-  //     .post("http://localhost:8000/paystack/pay", {
-  //       email: user[0].email,
-  //       amount: 5000,
-  //       token: Cookies.get("token"),
-  //     })
-  //     .then((response) => {
-  //       setPaystackUrl(response.data.url);
-  //       console.log(response);
-  //     });
-  // };
   const [cardInfo, setCardInfo] = useState([]);
   const [selectedHostels, setSelectedHostels] = useState([]);
   const [selectedHostel, setSelectedHostel] = useState({});
   const [priceSelector, setPriceSelector] = useState(0);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await axios
+      .post("http://localhost:8000/paystack/pay", {
+        email: user[0].email,
+        amount: Number(priceSelector),
+        token: Cookies.get("token"),
+      })
+      .then((response) => {
+        setPaystackUrl(response.data.url);
+        console.log(response);
+        window.location = response.data.url;
+      });
+  };
 
   const onHostelSelected = (e) => {
     const { value } = e.target;
@@ -256,13 +257,37 @@ const BookingForm = () => {
             <div className="sidecont">
               <div className="sidenav">
                 <ul>
-                  <Link to="/userhome">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/userhome"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Home</li>
                   </Link>
-                  <Link to="/manage">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/manage"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Manage Bedspace</li>
                   </Link>
-                  <Link to="/update">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/update"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Update Profile</li>
                   </Link>
                   <li>FAQs</li>

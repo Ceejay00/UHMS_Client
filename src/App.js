@@ -30,6 +30,7 @@ import ManageBed from "./Userprofile/ManageBed";
 import EditProfile from "./Userprofile/EditProfile";
 import BookingForm from "./Userprofile/BookingForm";
 import AdminSignIn from "./sign/AdminSignIn";
+import PaystackSucc from "./Userprofile/PaystackSucc";
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
         <Route path="update" element={<EditProfile />} />
         <Route path="book" element={<BookingForm />} />
         <Route path="admin" element={<AdminSignIn />} />
+        <Route path="success" element={<PaystackSucc />} />
       </Routes>
     </Router>
   );

@@ -103,13 +103,37 @@ const EditProfile = () => {
             <div className="sidecont">
               <div className="sidenav">
                 <ul>
-                  <Link to="/userhome">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/userhome"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Home</li>
                   </Link>
-                  <Link to="/manage">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/manage"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Manage Bedspace</li>
                   </Link>
-                  <Link to="/update">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/update"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Update Profile</li>
                   </Link>
                   <li>FAQs</li>

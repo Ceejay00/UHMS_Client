@@ -80,9 +80,26 @@ form {
   border-radius: 20px;
   color: white;
   background-color: blue;
+  margin-top: 40px;
 }
 .reds {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+@media screen and (max-width: 1024px) {
+  .bordevvd {
+    height: 250vh;
+
+    border: 1px solid white;
+  }
+  .conlarge {
+    height: 200vh;
+  }
+  .sidebar {
+    height: 200vh;
+  }
+  .rightsideeee {
+    margin-left: 20px;
+  }
 }

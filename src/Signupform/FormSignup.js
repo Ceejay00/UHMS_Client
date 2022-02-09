@@ -255,15 +255,16 @@ const FormSignup = () => {
             <div className="sad">
               <div className="column1">
                 <label htmlFor="firstName" className="fl">
-                  <span>Firstname</span>
+                  <span>First Name</span>
                 </label>{" "}
+                <br />
                 <br />
                 <input
                   id="firstName"
                   type="text"
                   className="fm"
                   name="firstName"
-                  placeholder="Enter your First name"
+                  placeholder="Enter your First Name"
                   value={values.firstName}
                   onChange={handleChange}
                 ></input>
@@ -271,11 +272,13 @@ const FormSignup = () => {
                   {" "}
                   {errors.firstName && <p>{errors.firstName}</p>}
                 </div>{" "}
+                <br />
                 <br></br>
                 <label htmlFor="email" className="fl">
                   Email
                 </label>
                 <br></br>
+                <br />
                 <input
                   id="email"
                   type="email"
@@ -291,12 +294,13 @@ const FormSignup = () => {
                   Matric No
                 </label>
                 <br></br>
+                <br />
                 <input
                   id="matricNumber"
                   type="text"
                   className="fm"
                   name="matricNumber"
-                  placeholder="Enter your Matric Numvber"
+                  placeholder="Enter your Matric Number"
                   value={values.matricNumber}
                   onChange={handleChange}
                 ></input>
@@ -309,6 +313,7 @@ const FormSignup = () => {
                   Level
                 </label>
                 <br></br>
+                <br />
                 <select
                   name="level"
                   id="level"
@@ -329,6 +334,7 @@ const FormSignup = () => {
                   Password
                 </label>
                 <br></br>
+                <br />
                 <input
                   id="password"
                   type="password"
@@ -345,15 +351,16 @@ const FormSignup = () => {
               </div>
               <div className="column2">
                 <label htmlFor="lastName" className="fl">
-                  Lastname
+                  Last Name
                 </label>{" "}
+                <br />
                 <br />
                 <input
                   id="lastName"
                   type="text"
                   className="fm"
                   name="lastName"
-                  placeholder="Enter your First name"
+                  placeholder="Enter your Last Name"
                   value={values.lastName}
                   onChange={handleChange}
                 ></input>
@@ -362,9 +369,11 @@ const FormSignup = () => {
                   {errors.lastName && <p>{errors.lastName}</p>}
                 </div>
                 <br></br>
+                <br />
                 <label htmlFor="phoneNo" className="fl">
                   Phone
                 </label>
+                <br />
                 <br />
                 <input
                   id="phoneNo"
@@ -372,7 +381,7 @@ const FormSignup = () => {
                   maxLength="11"
                   className="fm"
                   name="phoneNo"
-                  placeholder="Enter your Phone no"
+                  placeholder="Enter your Phone Number"
                   value={values.phoneNo}
                   onChange={handleChange}
                 ></input>{" "}
@@ -380,6 +389,7 @@ const FormSignup = () => {
                 <label htmlFor="faculty" className="fl">
                   Faculty
                 </label>
+                <br />
                 <br></br>
                 <select
                   name="faculty"
@@ -402,6 +412,7 @@ const FormSignup = () => {
                   Department
                 </label>
                 <br></br>
+                <br />
                 <select
                   name="department"
                   id="department"
@@ -424,6 +435,7 @@ const FormSignup = () => {
                   Confirm Password
                 </label>
                 <br></br>
+                <br />
                 <input
                   id="confirmPass"
                   type="password"
@@ -433,12 +445,14 @@ const FormSignup = () => {
                   value={values.confirmPass}
                   onChange={handleChange}
                 ></input>
-                {errors.confirmPass && <p>{errors.confirmPass}</p>}
+                <div className="error">
+                  {errors.confirmPass && <p>{errors.confirmPass}</p>}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="form-btn">
-            <button type="submit">Sign up</button>
+            <div className="form-btn">
+              <button type="submit">Sign up</button>
+            </div>
           </div>
         </form>
       </div>

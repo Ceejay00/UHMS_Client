@@ -141,36 +141,54 @@
 }
 
 .theses {
-  width: 100.6%;
-  height: 600px;
+  width: 85%;
+  height: 800px;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  margin-left: 100px;
 }
 .borderve .Manage {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  width: 100%;
 
   align-items: center;
 }
 .borderve {
   border: 1px solid black;
-  width: 109.6%;
+  width: 96%;
   margin-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .rightsidee {
-  height: 600px;
+  height: 400px;
   width: 500px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
 }
 .leftsidee {
+  margin-left: 40px;
   width: 400px;
-  height: 600px;
+  height: 400px;
 
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+.logos-name {
+  width: 180px;
+  display: flex;
+}
+.logos-name .name {
+  color: #a8b7ed;
+}
+.logos-name .hostels {
+  color: white;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../Userprofile/userprofile.css";
+import "../Userprofile/manage.css";
 import unilorin from "../images/unilorin.png";
 import elipse from "../images/Ellipse.png";
 import empty from "../images/empty.png";
@@ -41,13 +42,37 @@ const ManageBed = () => {
             <div className="sidecont">
               <div className="sidenav">
                 <ul>
-                  <Link to="/userhome">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/userhome"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Home</li>
                   </Link>
-                  <Link to="/manage">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/manage"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Manage Bedspace</li>
                   </Link>
-                  <Link to="/update">
+                  <Link
+                    className={({ isActive }) =>
+                      isActive
+                        ? "bg-green-500 font-bold"
+                        : "bg-red-500 font-thin"
+                    }
+                    to="/update"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
                     <li>Update Profile</li>
                   </Link>
                   <li>FAQs</li>
@@ -77,9 +102,10 @@ const ManageBed = () => {
                   <h1>Manage Information</h1>
                   <h3>Update and Print Hostel Information</h3>
                 </div>
-                <div className="theses">
+                {/* <div className="theses">
                   <div className="rightsidee">
                     <div className="formlook">
+                      <label htmlFor="">Hostel naem</label>
                       <span>{users.firstName}</span>
                     </div>
                     <div className="formlook">
@@ -100,6 +126,38 @@ const ManageBed = () => {
                       <span>{users.matricNumber}</span>
                     </div>
                   </div>
+                </div> */}
+                <div className="ter">
+                  <div className="rights">
+                    <label htmlFor="HostelName">Hostel Name</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                    <br />
+                    <label htmlFor="matricNo">Matric Number</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                    <br />
+                    <label htmlFor="duration">Duration</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                  </div>
+                  <div className="lefts">
+                    <label htmlFor="room">Room Number</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                    <br />
+                    <label htmlFor="roomt">Room type</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                    <br />
+                    <label htmlFor="duration">Session</label>
+                    <br />
+                    <input className="ehen" type="text"></input>
+                  </div>
+                </div>
+                <div className="labutn">
+                  <button>Print Hostel Information</button>
+                  <button>Confirm Change</button>
                 </div>
               </div>
             </div>

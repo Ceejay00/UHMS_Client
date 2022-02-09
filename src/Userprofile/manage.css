@@ -1,0 +1,49 @@
+.ter {
+  height: 500px;
+  width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.rights {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  font-weight: bold;
+}
+
+.lefts {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-flow: column;
+  font-weight: bold;
+}
+
+.ehen {
+  width: 400px;
+  height: 50px;
+
+  border-radius: 5px;
+}
+.labutn {
+  width: 1400px;
+  height: 50px;
+
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  margin-bottom: 40px;
+}
+.labutn button {
+  width: 300px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #335ffe;
+  border: none;
+  border-radius: 40px;
+  color: white;
+}

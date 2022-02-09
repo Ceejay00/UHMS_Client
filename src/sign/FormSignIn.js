@@ -1,11 +1,13 @@
 import React from "react";
 import NavbarTwo from "../navbars/NavbarTwo";
 import { Button } from "primereact/button";
-import bedsa from "../images/bedsa.png";
 import useSignIn from "./useSignIn";
+import bedsa from "../images/bedsa.png";
+
 import validate from "../Signupform/validateInfo";
 import unilorin from "../images/unilorin.png";
 import { Link } from "react-router-dom";
+import Footer from "../footer/Footer";
 const FormSignIn = () => {
   const { handleChange, values, handleSubmit, errors, isLoading } =
     useSignIn(validate);
@@ -20,7 +22,7 @@ const FormSignIn = () => {
         </div>
         <div className="signin">
           <div className="spn">
-            <div>
+            <div className="admin">
               <Link to="/admin">
                 <button>Admin</button>
               </Link>
@@ -70,7 +72,8 @@ const FormSignIn = () => {
                 {errors.password && <p>{errors.password}</p>}
               </div>
               <div className="form-btn">
-                <Button
+                <button>Sign in</button>
+                {/* <Button
                   label="Sign in"
                   loading={isLoading}
                   loadingIcon="pi pi-spin pi-sun"
@@ -81,7 +84,7 @@ const FormSignIn = () => {
                     padding: "15px",
                     outline: "none",
                   }}
-                />
+                /> */}
               </div>
             </div>
           </form>

@@ -1,5 +1,4 @@
 .form-inputs p {
-  color: red;
   display: flex;
   box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
@@ -32,7 +31,7 @@
 }
 .backgroundh {
   background-color: #1f1f2d;
-  height: 130vh;
+  height: 170vh;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -126,10 +125,10 @@
   width: 1355px;
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 120vh;
 
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 50px;
   margin-top: 60px;
 }
 .form-btn {
@@ -150,10 +149,10 @@
   font-weight: bolder;
   font-family: Montserrat;
   cursor: pointer;
+  margin-top: 40px;
 }
 @media screen and (max-width: 1024px) {
   .form-inputs p {
-    color: red;
     display: flex;
     box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: -12px 1px 52px -2px rgba(0, 0, 0, 0.75);
@@ -278,6 +277,7 @@
 
     flex-wrap: wrap;
     border-radius: 10px;
+    height: 100vh;
   }
   .form-btn {
     width: 100%;
@@ -298,8 +298,8 @@
     font-weight: bolder;
     font-family: Montserrat;
     cursor: pointer;
-    margin-top: 810px;
-    margin-left: 100px;
+    margin-top: 1010px;
+    margin-right: 200px;
   }
   .column1 {
     width: 500px;
@@ -358,6 +358,8 @@
   }
   .signin {
     width: 100%;
+
+    margin-right: 70px;
   }
   .h {
     width: 100%;
@@ -376,7 +378,7 @@
   }
   .fl {
     color: white;
-    background-color: red;
+
     width: 400px;
   }
   .spn {
@@ -464,10 +466,14 @@
   height: 60px;
   border-radius: 5px;
   border: none;
+  font-size: 15px;
+  color: #d8e3f3;
+  font-weight: bold;
+  font-family: Montserrat;
 }
 .fl {
   color: white;
-
+  font-family: Montserrat;
   width: 400px;
 }
 .spn {
@@ -485,6 +491,7 @@
 }
 .bas {
   display: flex;
+  margin-right: 60px;
 }
 .spn button {
   width: 150px;
@@ -507,23 +514,34 @@
 
 .sad {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
 }
 .column1 {
   width: 500px;
-  height: 60vh;
+  height: 70vh;
   margin-left: 110px;
   font-family: Montserrat;
+  font-weight: bold;
 }
 .column2 {
   width: 500px;
-  height: 60vh;
+  height: 70vh;
   margin-left: 110px;
   font-family: Montserrat;
+  font-weight: bold;
 }
 .accomodation {
   font-family: Montserrat;
+}
+.error {
+  color: red;
+}
+.admin {
+  margin-left: 20px;
+}
+.h {
+  font-weight: bold;
 }

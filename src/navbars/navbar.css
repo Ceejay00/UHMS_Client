@@ -8,6 +8,7 @@
 }
 .logo-name {
   display: flex;
+  margin-left: 200px;
 }
 .logo-name .name {
   color: #a8b7ed;
@@ -17,14 +18,17 @@
 }
 .Already {
   display: flex;
-  width: 280px;
+  width: 400px;
   height: 42px;
+
   justify-content: space-between;
+  margin-right: 160px;
 }
 .Already p {
   font-size: 14px;
   color: white;
   font-weight: bold;
+  margin-left: 50px;
 }
 .navlinks ul {
   width: 400px;
@@ -45,6 +49,9 @@
   background-color: #335ffe;
   color: white;
   cursor: pointer;
+}
+.Already button {
+  margin-right: 70px;
 }
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -70,14 +77,16 @@
     font-size: 9px;
   }
   .logo-name img {
-    height: 30px;
-    width: 50px;
+    height: 50px;
+    width: 80px;
   }
   .logo-name .name {
     color: #a8b7ed;
+    font-size: 15px;
   }
   .logo-name .hostels {
     color: white;
+    font-size: 15px;
   }
   .Already {
     display: flex;
@@ -90,6 +99,7 @@
     color: white;
     font-weight: bold;
   }
+
   .navlinks ul {
     width: 200px;
     display: flex;
@@ -101,23 +111,27 @@
   }
   .navlinks ul li a {
     text-decoration: none;
+    font-size: 15px;
   }
   .Acom button {
-    width: 60px;
-    height: 22px;
+    width: 120px;
+    height: 42px;
     border: none;
     border-radius: 28px;
     background-color: #335ffe;
     color: white;
     cursor: pointer;
-    font-size: 7px;
+    font-size: 15px;
     font-family: Montserrat;
   }
 }
 .navbar {
-  background-color: #25253e;
+  background-color: #1f1f2d;
   font-family: Montserrat;
+  justify-content: space-between;
+  padding-top: 50px;
 }
+
 .iy {
   font-family: Montserrat;
 }
